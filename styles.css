@@ -281,6 +281,28 @@ main {
   color: var(--muted);
 }
 
+.card.stack {
+  display: grid;
+  gap: 12px;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 10px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  background: rgba(56, 189, 248, 0.12);
+  color: #e0f2fe;
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  font-weight: 700;
+}
 .timeline {
   position: relative;
   display: grid;
@@ -323,6 +345,53 @@ main {
   color: var(--muted);
 }
 
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 18px;
+  margin-top: 14px;
+}
+
+.post-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 16px;
+  display: grid;
+  gap: 12px;
+  box-shadow: var(--shadow);
+}
+
+.post-card h4 {
+  margin-top: 6px;
+}
+
+.post-card p {
+  color: var(--muted);
+}
+
+.post-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.post-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  padding: 6px 10px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 999px;
+  font-size: 0.95rem;
+  color: #e5e7eb;
+}
 .contact__grid {
   align-items: center;
 }

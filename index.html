@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thiago Cardoso | Engenharia de Software</title>
+  <title>Thiago Cardoso | Diário de Estudos em Engenharia de Software</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -14,15 +14,15 @@
     <div class="brand">
       <div class="avatar">TC</div>
       <div>
-        <p class="eyebrow">Engenharia de Software</p>
+        <p class="eyebrow">Diário de Estudos</p>
         <h1 class="name">Thiago Cardoso</h1>
       </div>
     </div>
     <nav class="nav">
+      <a href="#posts">Blog</a>
       <a href="#sobre">Sobre</a>
-      <a href="#skills">Stack</a>
-      <a href="#projetos">Projetos</a>
-      <a href="#contato" class="pill">Contato</a>
+      <a href="#estudos">Trilhas</a>
+      <a href="#contato" class="pill">Assinar novidades</a>
     </nav>
   </header>
 
@@ -30,143 +30,174 @@
     <section class="hero">
       <div class="hero__content">
         <p class="eyebrow">Java • Arquitetura limpa • Sistemas financeiros</p>
-        <h2>Construindo produtos financeiros seguros, escaláveis e elegantes.</h2>
+        <h2>Blog pessoal com notas rápidas do que estou estudando.</h2>
         <p class="lead">
-          Engenheiro de software especializado em Java e Spring, combinando Clean Architecture, DDD e Kafka
-          para entregar plataformas resilientes em nuvem.
+          Registro aberto de aprendizados em engenharia de software: arquitetura em Java, padrões distribuídos,
+          observabilidade e práticas que aplico em produtos financeiros. Posts curtos, direto do caderno para cá.
         </p>
         <div class="cta-group">
-          <a class="button primary" href="#contato">Vamos conversar</a>
-          <a class="button ghost" href="#projetos">Ver projetos</a>
+          <a class="button primary" href="#posts">Ler as últimas notas</a>
+          <a class="button ghost" href="#contato">Assinar atualizações</a>
         </div>
         <div class="metrics">
           <div>
-            <p class="metric__value">10+</p>
-            <p class="metric__label">Sistemas financeiros entregues</p>
+            <p class="metric__value">Semanal</p>
+            <p class="metric__label">Novas leituras e experimentos</p>
           </div>
           <div>
-            <p class="metric__value">99.9%</p>
-            <p class="metric__label">Disponibilidade em produção</p>
+            <p class="metric__value">Stack</p>
+            <p class="metric__label">Java, Spring, Kafka, AWS, observabilidade</p>
           </div>
           <div>
-            <p class="metric__value">Cloud</p>
-            <p class="metric__label">AWS, Observabilidade e SRE</p>
+            <p class="metric__value">Formato</p>
+            <p class="metric__label">Diários curtos + guias práticos</p>
           </div>
         </div>
       </div>
       <div class="hero__card">
         <div class="card__header">
-          <p class="eyebrow">Arquitetura em foco</p>
-          <h3>Blueprint de um serviço de pagamentos</h3>
+          <p class="eyebrow">Agenda de estudos</p>
+          <h3>O que estou registrando por aqui</h3>
         </div>
         <ul class="card__list">
           <li>
-            <span>🧭 Domínio</span>
-            <p>Bounded contexts alinhados ao negócio e contratos resilientes entre squads.</p>
+            <span>🔄 Arquitetura evolutiva</span>
+            <p>Como refatoro serviços legados usando padrões hexagonais e contratos em volta do domínio.</p>
           </li>
           <li>
-            <span>⚙️ Serviço</span>
-            <p>Java + Spring Boot com casos de uso claros, testes de contrato e pipelines GitOps.</p>
+            <span>📡 Eventos & resiliência</span>
+            <p>Experimentando Kafka com esquemas versionados, idempotência e testes de carga.</p>
           </li>
           <li>
-            <span>📡 Eventos</span>
-            <p>Kafka garantindo idempotência, backpressure e rastreabilidade ponta a ponta.</p>
+            <span>🧭 Observabilidade</span>
+            <p>Dashboards, tracing e alertas inspirados em SRE para não voar às cegas.</p>
           </li>
           <li>
-            <span>☁️ Cloud</span>
-            <p>Infra como código, observabilidade 3 pilares e feature flags para releases seguros.</p>
+            <span>🛠️ Ferramentas</span>
+            <p>Plugins, snippets e pequenos utilitários que aceleram o dia a dia.</p>
           </li>
         </ul>
       </div>
     </section>
 
+    <section class="panel" id="posts">
+      <div class="section__header">
+        <p class="eyebrow">Blog</p>
+        <h3>Últimas notas de estudo</h3>
+      </div>
+      <div class="posts-grid">
+        <article class="post-card">
+          <header>
+            <div class="post-meta">
+              <span class="badge">Kafka</span>
+              <span class="badge">Observabilidade</span>
+              <span class="eyebrow">12 jan 2025 • 6 min</span>
+            </div>
+            <h4>Tracing ponta a ponta com Kafka Streams + OpenTelemetry</h4>
+          </header>
+          <p>Configuração de spans distribuídos, extração de headers, métricas de lag e alertas que realmente
+            ajudam a investigar gargalos em pipelines de evento.</p>
+          <div class="post-actions">
+            <span class="tag">Código</span>
+            <span class="tag">Dashboards</span>
+            <span class="tag">SRE</span>
+          </div>
+        </article>
+
+        <article class="post-card">
+          <header>
+            <div class="post-meta">
+              <span class="badge">Clean Architecture</span>
+              <span class="badge">Java</span>
+              <span class="eyebrow">04 jan 2025 • 4 min</span>
+            </div>
+            <h4>Notas de um refactor hexagonal em um serviço de pagamentos</h4>
+          </header>
+          <p>Dividi casos de uso, repos e adapters para reduzir acoplamento com frameworks. Mostro como
+            configurei contratos consumer-driven para garantir compatibilidade.</p>
+          <div class="post-actions">
+            <span class="tag">DDD</span>
+            <span class="tag">Contratos</span>
+            <span class="tag">Testes</span>
+          </div>
+        </article>
+
+        <article class="post-card">
+          <header>
+            <div class="post-meta">
+              <span class="badge">AWS</span>
+              <span class="badge">Custos</span>
+              <span class="eyebrow">20 dez 2024 • 5 min</span>
+            </div>
+            <h4>Checklist rápido para evitar surpresas na conta da nuvem</h4>
+          </header>
+          <p>Tags obrigatórias, budgets por squad, alarmes de uso e automações que desligam ambientes de teste
+            fora do horário comercial.</p>
+          <div class="post-actions">
+            <span class="tag">FinOps</span>
+            <span class="tag">Automação</span>
+            <span class="tag">Infra as Code</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel" id="estudos">
+      <div class="section__header">
+        <p class="eyebrow">Trilhas de estudo</p>
+        <h3>Assuntos que estou explorando em séries de posts.</h3>
+      </div>
+      <div class="grid three">
+        <div class="card stack">
+          <h4>Arquitetura distribuída</h4>
+          <p>Modelagem de eventos, sagas, patterns anti-fragilidade e monitoramento para ambientes de alta
+            concorrência.</p>
+          <div class="chips">
+            <span class="chip">Kafka</span>
+            <span class="chip">Sagas</span>
+            <span class="chip">Idempotência</span>
+          </div>
+        </div>
+        <div class="card stack">
+          <h4>Clean Architecture na prática</h4>
+          <p>Portas e adaptadores, testes de contrato e refinos de domínio em serviços financeiros críticos.</p>
+          <div class="chips">
+            <span class="chip">Hexagonal</span>
+            <span class="chip">Contract Tests</span>
+            <span class="chip">DDD</span>
+          </div>
+        </div>
+        <div class="card stack">
+          <h4>Observabilidade e SRE</h4>
+          <p>Dashboards de produto, alertas que importam, gestão de SLOs e simulações de falha para validar
+            resiliência.</p>
+          <div class="chips">
+            <span class="chip">Tracing</span>
+            <span class="chip">SLOs</span>
+            <span class="chip">Chaos</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="panel" id="sobre">
       <div class="section__header">
-        <p class="eyebrow">Quem sou</p>
-        <h3>Software Engineer com paixão por sistemas robustos e código limpo.</h3>
+        <p class="eyebrow">Quem escreve</p>
+        <h3>Sou engenheiro de software focado em sistemas financeiros e arquitetura limpa.</h3>
       </div>
       <div class="grid two">
         <p>
-          Trabalho na interseção entre produto e arquitetura, ajudando times a escalar soluções financeiras
-          com governança e simplicidade. Priorizo clareza de domínio, automação de qualidade e colaboração.
+          Uso o blog para compartilhar experimentos, anotações rápidas e guias curtos que aplico no dia a dia.
+          Gosto de escrever de forma prática, mostrando decisões e trade-offs que tomo em projetos reais.
         </p>
         <div class="highlights">
           <div class="chip">Java &amp; Spring</div>
-          <div class="chip">Clean Architecture</div>
-          <div class="chip">Domain-Driven Design</div>
-          <div class="chip">Kafka &amp; mensageria</div>
-          <div class="chip">Cloud (AWS)</div>
+          <div class="chip">Mensageria</div>
           <div class="chip">Observabilidade</div>
+          <div class="chip">SRE</div>
+          <div class="chip">Cloud</div>
+          <div class="chip">Clean Architecture</div>
         </div>
-      </div>
-    </section>
-
-    <section class="panel" id="skills">
-      <div class="section__header">
-        <p class="eyebrow">Stack de confiança</p>
-        <h3>Ferramentas e práticas que uso para entregar com qualidade.</h3>
-      </div>
-      <div class="grid three">
-        <div class="card">
-          <h4>Arquitetura limpa</h4>
-          <p>Separação rigorosa de camadas, casos de uso e gateways. Foco em testes automatizados.</p>
-        </div>
-        <div class="card">
-          <h4>Plataforma Java</h4>
-          <p>Spring Boot, Spring Cloud, JPA, Feign, RestAssured, testes de contrato e performance.</p>
-        </div>
-        <div class="card">
-          <h4>Dados e eventos</h4>
-          <p>Kafka, Schema Registry, modelagem orientada a eventos e resiliência com DLQs.</p>
-        </div>
-        <div class="card">
-          <h4>Cloud &amp; SRE</h4>
-          <p>AWS, Terraform, pipelines CI/CD, feature flags, métricas, tracing e logs estruturados.</p>
-        </div>
-        <div class="card">
-          <h4>Colaboração</h4>
-          <p>Code reviews cuidadosos, documentação leve e workshops de arquitetura com times.</p>
-        </div>
-        <div class="card">
-          <h4>Segurança</h4>
-          <p>Autenticação, autorização, segurança em APIs, compliance e gestão de segredos.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="panel" id="projetos">
-      <div class="section__header">
-        <p class="eyebrow">Destaques recentes</p>
-        <h3>Projetos que mostram como transformo requisitos em valor.</h3>
-      </div>
-      <div class="timeline">
-        <article class="timeline__item">
-          <div class="dot"></div>
-          <div>
-            <p class="eyebrow">Plataforma de crédito</p>
-            <h4>Motor de concessão com decisão em segundos</h4>
-            <p>Microserviço em Spring Boot com Clean Architecture, integração com bureaus via Kafka e
-              observabilidade completa (tracing, logs estruturados e métricas SLO).</p>
-          </div>
-        </article>
-        <article class="timeline__item">
-          <div class="dot"></div>
-          <div>
-            <p class="eyebrow">Pagamentos</p>
-            <h4>Roteador de pagamentos multigateway</h4>
-            <p>Orquestração de fluxos críticos usando mensageria e sagas, resiliente a falhas, com testes de
-              contrato entre squads e deploy contínuo em nuvem.</p>
-          </div>
-        </article>
-        <article class="timeline__item">
-          <div class="dot"></div>
-          <div>
-            <p class="eyebrow">Experiência</p>
-            <h4>Portal de atendimento seguro</h4>
-            <p>API stateless com segurança reforçada, cache inteligente e feature flags para releases
-              experimentais sem interromper a operação.</p>
-          </div>
-        </article>
       </div>
     </section>
 
@@ -177,11 +208,11 @@
       </div>
       <div class="grid two contact__grid">
         <p>
-          Adoro discutir desafios de escala, integração de sistemas e oportunidades para elevar a qualidade de
-          software. Envie uma mensagem e vamos começar.
+          Quer receber quando sair um post novo? Envie uma mensagem ou siga no LinkedIn para acompanhar as
+          próximas notas de estudo.
         </p>
         <div class="contact__actions">
-          <a class="button primary" href="mailto:thiago@example.com">Enviar e-mail</a>
+          <a class="button primary" href="mailto:thiago@example.com">Quero receber por e-mail</a>
           <a class="button ghost" href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
       </div>
