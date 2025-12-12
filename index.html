@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thiago Cardoso | Engenharia de Software</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="avatar">TC</div>
+      <div>
+        <p class="eyebrow">Engenharia de Software</p>
+        <h1 class="name">Thiago Cardoso</h1>
+      </div>
+    </div>
+    <nav class="nav">
+      <a href="#sobre">Sobre</a>
+      <a href="#skills">Stack</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato" class="pill">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero__content">
+        <p class="eyebrow">Java • Arquitetura limpa • Sistemas financeiros</p>
+        <h2>Construindo produtos financeiros seguros, escaláveis e elegantes.</h2>
+        <p class="lead">
+          Engenheiro de software especializado em Java e Spring, combinando Clean Architecture, DDD e Kafka
+          para entregar plataformas resilientes em nuvem.
+        </p>
+        <div class="cta-group">
+          <a class="button primary" href="#contato">Vamos conversar</a>
+          <a class="button ghost" href="#projetos">Ver projetos</a>
+        </div>
+        <div class="metrics">
+          <div>
+            <p class="metric__value">10+</p>
+            <p class="metric__label">Sistemas financeiros entregues</p>
+          </div>
+          <div>
+            <p class="metric__value">99.9%</p>
+            <p class="metric__label">Disponibilidade em produção</p>
+          </div>
+          <div>
+            <p class="metric__value">Cloud</p>
+            <p class="metric__label">AWS, Observabilidade e SRE</p>
+          </div>
+        </div>
+      </div>
+      <div class="hero__card">
+        <div class="card__header">
+          <p class="eyebrow">Arquitetura em foco</p>
+          <h3>Blueprint de um serviço de pagamentos</h3>
+        </div>
+        <ul class="card__list">
+          <li>
+            <span>🧭 Domínio</span>
+            <p>Bounded contexts alinhados ao negócio e contratos resilientes entre squads.</p>
+          </li>
+          <li>
+            <span>⚙️ Serviço</span>
+            <p>Java + Spring Boot com casos de uso claros, testes de contrato e pipelines GitOps.</p>
+          </li>
+          <li>
+            <span>📡 Eventos</span>
+            <p>Kafka garantindo idempotência, backpressure e rastreabilidade ponta a ponta.</p>
+          </li>
+          <li>
+            <span>☁️ Cloud</span>
+            <p>Infra como código, observabilidade 3 pilares e feature flags para releases seguros.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="panel" id="sobre">
+      <div class="section__header">
+        <p class="eyebrow">Quem sou</p>
+        <h3>Software Engineer com paixão por sistemas robustos e código limpo.</h3>
+      </div>
+      <div class="grid two">
+        <p>
+          Trabalho na interseção entre produto e arquitetura, ajudando times a escalar soluções financeiras
+          com governança e simplicidade. Priorizo clareza de domínio, automação de qualidade e colaboração.
+        </p>
+        <div class="highlights">
+          <div class="chip">Java &amp; Spring</div>
+          <div class="chip">Clean Architecture</div>
+          <div class="chip">Domain-Driven Design</div>
+          <div class="chip">Kafka &amp; mensageria</div>
+          <div class="chip">Cloud (AWS)</div>
+          <div class="chip">Observabilidade</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel" id="skills">
+      <div class="section__header">
+        <p class="eyebrow">Stack de confiança</p>
+        <h3>Ferramentas e práticas que uso para entregar com qualidade.</h3>
+      </div>
+      <div class="grid three">
+        <div class="card">
+          <h4>Arquitetura limpa</h4>
+          <p>Separação rigorosa de camadas, casos de uso e gateways. Foco em testes automatizados.</p>
+        </div>
+        <div class="card">
+          <h4>Plataforma Java</h4>
+          <p>Spring Boot, Spring Cloud, JPA, Feign, RestAssured, testes de contrato e performance.</p>
+        </div>
+        <div class="card">
+          <h4>Dados e eventos</h4>
+          <p>Kafka, Schema Registry, modelagem orientada a eventos e resiliência com DLQs.</p>
+        </div>
+        <div class="card">
+          <h4>Cloud &amp; SRE</h4>
+          <p>AWS, Terraform, pipelines CI/CD, feature flags, métricas, tracing e logs estruturados.</p>
+        </div>
+        <div class="card">
+          <h4>Colaboração</h4>
+          <p>Code reviews cuidadosos, documentação leve e workshops de arquitetura com times.</p>
+        </div>
+        <div class="card">
+          <h4>Segurança</h4>
+          <p>Autenticação, autorização, segurança em APIs, compliance e gestão de segredos.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel" id="projetos">
+      <div class="section__header">
+        <p class="eyebrow">Destaques recentes</p>
+        <h3>Projetos que mostram como transformo requisitos em valor.</h3>
+      </div>
+      <div class="timeline">
+        <article class="timeline__item">
+          <div class="dot"></div>
+          <div>
+            <p class="eyebrow">Plataforma de crédito</p>
+            <h4>Motor de concessão com decisão em segundos</h4>
+            <p>Microserviço em Spring Boot com Clean Architecture, integração com bureaus via Kafka e
+              observabilidade completa (tracing, logs estruturados e métricas SLO).</p>
+          </div>
+        </article>
+        <article class="timeline__item">
+          <div class="dot"></div>
+          <div>
+            <p class="eyebrow">Pagamentos</p>
+            <h4>Roteador de pagamentos multigateway</h4>
+            <p>Orquestração de fluxos críticos usando mensageria e sagas, resiliente a falhas, com testes de
+              contrato entre squads e deploy contínuo em nuvem.</p>
+          </div>
+        </article>
+        <article class="timeline__item">
+          <div class="dot"></div>
+          <div>
+            <p class="eyebrow">Experiência</p>
+            <h4>Portal de atendimento seguro</h4>
+            <p>API stateless com segurança reforçada, cache inteligente e feature flags para releases
+              experimentais sem interromper a operação.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel contact" id="contato">
+      <div class="section__header">
+        <p class="eyebrow">Próximo passo</p>
+        <h3>Vamos criar a próxima solução financeira juntos?</h3>
+      </div>
+      <div class="grid two contact__grid">
+        <p>
+          Adoro discutir desafios de escala, integração de sistemas e oportunidades para elevar a qualidade de
+          software. Envie uma mensagem e vamos começar.
+        </p>
+        <div class="contact__actions">
+          <a class="button primary" href="mailto:thiago@example.com">Enviar e-mail</a>
+          <a class="button ghost" href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Construído com cuidado por Thiago Cardoso • Java | Clean Architecture | Sistemas financeiros</p>
+  </footer>
+</body>
+</html>
