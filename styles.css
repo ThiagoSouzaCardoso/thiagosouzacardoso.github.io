@@ -303,7 +303,6 @@ main {
   border: 1px solid rgba(56, 189, 248, 0.35);
   font-weight: 700;
 }
-
 .timeline {
   position: relative;
   display: grid;
@@ -393,7 +392,6 @@ main {
   font-size: 0.95rem;
   color: #e5e7eb;
 }
-
 .contact__grid {
   align-items: center;
 }
